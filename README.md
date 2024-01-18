@@ -14,13 +14,13 @@ TSNN consists of several lays of FCN and the concept of using an FCN-based netwo
 TSNN consists of nine fully connected layers with 400 neurons for the first eight layers while for the last one whose number of neurons matches the number of considered classes. All the layers, but the last, are followed by the [Rectified Linear Unit (ReLU)](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) activation function that ensures a stable training procedure and fast convergence.
 
 <p align="center">
-<img src="images/architecture.png" width=300> 
+<img src="images/architecture.png" width=380> 
 </p>
 
 The cost function is the multiclass cross-entropy function (CE).
 
 <p align="center">
-<img src="images/ce.png" width=500> 
+<img src="images/ce.png" width=450> 
 </p>
 
 
