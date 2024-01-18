@@ -30,7 +30,7 @@ Noisy Image| Noise-Free Reference | InSAR-MONet
 <img src="https://user-images.githubusercontent.com/36993034/197556940-3af2a154-d82d-4df3-b18d-bd37b0258bd7.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557009-a407aea1-8f7c-41a5-834c-87066edace1e.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557074-e7566a82-f0bf-4853-9776-8ef22aa77c82.png" width="150">
 
 # Team members
- Wenyu Yang (contact person, wenyu.yang001@studenti.uniparthenope.it);
+ Wenyu Yang (contact person, wenyu.yang001@studenti.uniparthenope.it); \
  Sergio Vitale (sergio.vitale@uniparthenope.it);
  Hossein Aghababaei (h.aghababaei@utwente.nl);
  Giampaolo Ferraioli (giampaolo.ferraioli@uniparthenope.it);
