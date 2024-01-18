@@ -8,15 +8,19 @@ If you find this information helpful and choose to incorporate it into your rese
 
 TSNN consists of several lays of FCN and the concept of using an FCN-based network for height estimation is from [TSNN for the urban](https://ieeexplore.ieee.org/abstract/document/8900616). 
 <p align="center">
- <img src="images/TSNN-4-1.pdf" width="700">
+ <img src="images/workflow.png" width="700">
 </p>
 
 TSNN consists of nine fully connected layers with 400 neurons for the first eight layers while for the last one whose number of neurons matches the number of considered classes. All the layers, but the last, are followed by the [Rectified Linear Unit (ReLU)](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) activation function that ensures a stable training procedure and fast convergence.
-  
+
+<p align="center">
+<img src="images/architecture.png" width=400> 
+</p>
+
 The cost function is the multiclass cross-entropy function (CE).
 
 <p align="center">
-<img src="images/TSNN-4-2.pdf" width=400> 
+<img src="images/ce.png" width=400> 
 </p>
 
 
