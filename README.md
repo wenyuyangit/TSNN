@@ -1,17 +1,19 @@
-# INSAR-MONet
-This repository contains the testing code of [InSAR-MONet: Interferometric SAR phase
-denoising using a multi-objective neural network](https://ieeexplore.ieee.org/document/9961176)., a CNN based solution for Interferometric SAR Phase denoising.
+# TSNN
+This repository contains the testing code of [A Deep Learning Solution for Height Estimation on
+a Forested Area based on Pol-TomoSAR data](https://ieeexplore.ieee.org/abstract/document/10121647)., a FCN-based solution for height estimation of forested areas.
 
-if you find it usefule and use it for you research, please cite as the following:
-> S. Vitale, G. Ferraioli, V. Pascazio and G. Schirinzi, "InSAR-MONet: Interferometric SAR Phase Denoising Using a Multiobjective Neural Network," in IEEE Transactions on Geoscience and Remote Sensing, vol. 60, pp. 1-14, 2022, Art no. 5239814, doi: 10.1109/TGRS.2022.3224303.
+If you find this information helpful and choose to incorporate it into your research, please include the following citation:
+> W. Yang, S. Vitale, H. Aghababaei, G. Ferraioli, V. Pascazio and G. Schirinzi, "A Deep Learning Solution for Height Estimation on a Forested Area Based on Pol-TomoSAR Data," in IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-14, 2023, Art no. 5208214, doi: 10.1109/TGRS.2023.3274395.
 
 
-InSAR-MONet inherits the 17 layers CNN architectures and the concept of using a multi-objective cost function from [MONet](https://ieeexplore.ieee.org/document/9261137). 
+TSNN consists of several lays of FCN and the concept of using an FCN-based network for height estimation is from [TSNN for the urban](https://ieeexplore.ieee.org/abstract/document/8900616). 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/36993034/197556012-74be765f-48e6-44e9-85d6-b706a9928611.png" width="700">
 </p>
+
+TSNN consists of nine fully connected layers with 400 neurons for the first eight layers while for the last one whose number of neurons matches the number of considered classes. All the layers, but the last, are followed by the [Rectified Linear Unit (ReLU)](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) activation function that ensures a stable training procedure and fast convergence.
   
-The cost function is composed of three terms taking care of spatial and statistical properties of the interferometric phase: a cosine based metric for evaluating similarity between output and reference, a gradient based metric for edges preservation and the Kullback-Leibler divergence between estimated noise distribution and the theoretical one.
+The cost function is the multiclass cross-entropy function (CE).
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/36993034/197556133-3ce13133-b3ec-4913-a8a9-0ead333e6c7e.png" width=400> 
@@ -27,12 +29,15 @@ Noisy Image| Noise-Free Reference | InSAR-MONet
 <img src="https://user-images.githubusercontent.com/36993034/197556940-3af2a154-d82d-4df3-b18d-bd37b0258bd7.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557009-a407aea1-8f7c-41a5-834c-87066edace1e.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557074-e7566a82-f0bf-4853-9776-8ef22aa77c82.png" width="150">
 
 # Team members
- Sergio Vitale    (contact person, sergio.vitale@uniparthenope.it);
+ Wenyu Yang (contact person, wenyu.yang001@studenti.uniparthenope.it);
+ Sergio Vitale (sergio.vitale@uniparthenope.it);
+ Hossein Aghababaei (h.aghababaei@utwente.nl);
  Giampaolo Ferraioli (giampaolo.ferraioli@uniparthenope.it);
+ Vito Pascazio (vito.pascazio@uniparthenope.it);
  Gilda  Schirinzi (gilda.schirinzi@uniparthenope.it)
- Vito Pascazio (vito.pascazio@uniparthenope.it)
+
  
-# License
+# License (how to get it ? for Sergio)
 Copyright (c) 2022 Dipartimento di Ingegneria and Dipartimento di Scienze e Tecnologie of Università degli Studi di Napoli "Parthenope".
 
 All rights reserved. This work should only be used for nonprofit purposes.
@@ -42,50 +47,50 @@ terms of the license, as specified in the document LICENSE.txt
 (included in this directory)
 
 # Usage 
-* **data** folder contains three samples images with simulated interferometric SAR phases (corresponding to the examples of the paper);
-Three differente cases can be tested:
+* **data** folder contains three sample images with simulated interferometric SAR phases (corresponding to the examples of the paper);
+Three different cases can be tested:
      * small baseline and high coherence (B1, Gamma 4)
      * medium baseline and medium coherence (B2, Gamma 3)
      * large baseline and low coherence (B4, Gamma 1)
 
-* *model* contains trained weigths
+* *model* contains trained weights
 * *model.py* contains the model implementation
 * *testing.py* is the main script for testing
 
 # Prerequisites
-This code is written on Ubuntu system for Python3.7 and uses Pytorch library.
+This code is written on the Ubuntu system for Python 3.7 and uses the Pytorch library.
 
-For a correct usage of the code, please install the python environement saved in **./env/monet_pytorch.yml** with the following step:
+For correct usage of the code, please install the Python environment saved in **./env/monet_pytorch.yml** with the following step:
 
 **Installing Anaconda** (if not already installed)
 
 1. download anaconda3 from https://www.anaconda.com/products/individual#linux
-2. from command line, move to the download directory and install the package by:
+2. from the command line, move to the download directory and install the package by:
 > sh <Anaconda_downloaded_version>.sh 
-and follow the instruction for installation
+and follow the instructions for installation
 3. add conda to path
 > PATH=~/anaconda3/bin:$PATH
 
 **Installing the conda environment**
 
-The file ./insarmonet_env.yml contains the environemnt for the testing the code. You can easily installing it by command line:
+The file ./insarmonet_env.yml contains the environment for testing the code. You can easily install it by command line:
 
-1. move to the folder containing the github repository and open the terminal
+1. move to the folder containing the GitHub repository and open the terminal
 2. run the following command
  > conda env create -f insarmonet_env.yml
 
 
-Once environment has been set up, activate it by command line as well:
+Once the environment has been set up, activate it by command line as well:
 
-1. activate the environemnt from the command line
+1. activate the environment from the command line
 
 > conda activate insarmonet_env
 
-2. launch spyder
+2. Launch Spyder
 
 > spyder
 
-3. goes to the folder containing **testing.py**, edit and run
+3. goes to the folder containing **testing.py**, edit, and run
 
 
 
