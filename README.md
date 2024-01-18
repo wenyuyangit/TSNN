@@ -30,12 +30,12 @@ Noisy Image| Noise-Free Reference | InSAR-MONet
 <img src="https://user-images.githubusercontent.com/36993034/197556940-3af2a154-d82d-4df3-b18d-bd37b0258bd7.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557009-a407aea1-8f7c-41a5-834c-87066edace1e.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557074-e7566a82-f0bf-4853-9776-8ef22aa77c82.png" width="150">
 
 # Team members
- Wenyu Yang (contact person, wenyu.yang001@studenti.uniparthenope.it); \
+ Wenyu Yang (wenyu.yang001@studenti.uniparthenope.it); \
  Sergio Vitale (sergio.vitale@uniparthenope.it);\
  Hossein Aghababaei (h.aghababaei@utwente.nl);\
  Giampaolo Ferraioli (giampaolo.ferraioli@uniparthenope.it);\
  Vito Pascazio (vito.pascazio@uniparthenope.it);\
- Gilda  Schirinzi (gilda.schirinzi@uniparthenope.it)\
+ Gilda  Schirinzi (gilda.schirinzi@uniparthenope.it)
 
  
 # License (how to get it ? for Sergio)
@@ -61,7 +61,7 @@ Three different cases can be tested:
 # Prerequisites
 This code is written on the Ubuntu system for Python 3.7 and uses the Pytorch library.
 
-For correct usage of the code, please install the Python environment saved in **./env/monet_pytorch.yml** with the following step:
+For correct usage of the code, please install the Python environment with the following step:
 
 **Installing Anaconda** (if not already installed)
 
@@ -74,18 +74,18 @@ and follow the instructions for installation
 
 **Installing the conda environment**
 
-The file ./insarmonet_env.yml contains the environment for testing the code. You can easily install it by command line:
+The file ./TSNNenv.yml contains the environment for testing the code. You can easily install it by command line:
 
 1. move to the folder containing the GitHub repository and open the terminal
 2. run the following command
- > conda env create -f insarmonet_env.yml
+ > conda env create -f TSNNenv.yml
 
 
 Once the environment has been set up, activate it by command line as well:
 
 1. activate the environment from the command line
 
-> conda activate insarmonet_env
+> conda activate TSNNenv
 
 2. Launch Spyder
 
