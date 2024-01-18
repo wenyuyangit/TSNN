@@ -31,11 +31,11 @@ Noisy Image| Noise-Free Reference | InSAR-MONet
 
 # Team members
  Wenyu Yang (contact person, wenyu.yang001@studenti.uniparthenope.it); \
- Sergio Vitale (sergio.vitale@uniparthenope.it);
- Hossein Aghababaei (h.aghababaei@utwente.nl);
- Giampaolo Ferraioli (giampaolo.ferraioli@uniparthenope.it);
- Vito Pascazio (vito.pascazio@uniparthenope.it);
- Gilda  Schirinzi (gilda.schirinzi@uniparthenope.it)
+ Sergio Vitale (sergio.vitale@uniparthenope.it);\
+ Hossein Aghababaei (h.aghababaei@utwente.nl);\
+ Giampaolo Ferraioli (giampaolo.ferraioli@uniparthenope.it);\
+ Vito Pascazio (vito.pascazio@uniparthenope.it);\
+ Gilda  Schirinzi (gilda.schirinzi@uniparthenope.it)\
 
  
 # License (how to get it ? for Sergio)
