@@ -26,14 +26,20 @@ The cost function is the multiclass cross-entropy function (CE).
 
 The test results are shown below:
 Forest:
+<p align="center">
+<img src="result/Forest.png" width="500"> 
+</p>
 
-<img src="result/Forest.png" width="300"> 
+<img src="result/Forest_line_1.png" width="250"> <img src="result/Forest_line_170.png" width="250">  <img src="result/Forest_line_280.png" width="250">
 
-<img src="result/Forest_line_1.png" width="300"> <img src="result/Forest_line_170.png" width="300">  <img src="result/Forest_line_280.png" width="300">
+Ground:
+<p align="center">
+<img src="result/Ground.png" width="500"> 
+</p>
+
+<img src="result/Ground_line_100.png" width="250"> <img src="result/Ground_line_150.png" width="250">  <img src="result/Ground_line_280.png" width="250">
 
  
-Ground:
-
 
 # Team members
  Wenyu Yang (wenyu.yang001@studenti.uniparthenope.it); \
