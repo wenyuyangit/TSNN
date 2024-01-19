@@ -48,20 +48,25 @@ terms of the license, as specified in the document LICENSE.txt
 (included in this directory)
 
 # Usage 
-* **data** folder contains three sample images with simulated interferometric SAR phases (corresponding to the examples of the paper);
-Three different cases can be tested:
-     * small baseline and high coherence (B1, Gamma 4)
-     * medium baseline and medium coherence (B2, Gamma 3)
-     * large baseline and low coherence (B4, Gamma 1)
+* **data** folder contains two patches: patch1 is for the forest height prediction and patch2 is for the ground height prediction (corresponding to the examples of the paper);
+  patch1:
+     * *CHM_patch1_x_nc.npy* : the input samples without phase calibration
+     * *CHM_patch1_y_step1.npy*: the forest height reference with quantized step, 1m
+  patch2:
+     * *DTM_patch2_x_nc.npy* : the input samples without phase calibration
+     * *DTM_patch2_y_step1.npy*: the ground height reference with quantized step, 1m
 
-* *model* contains trained weights
-* *model.py* contains the model implementation
-* *testing.py* is the main script for testing
+* *CHM_9layer_400_0.0001_nc_para.pth* contains trained weights of the forest height prediction
+* *DTM_9layer_400_0.0001_nc_para.pth* contains trained weights of the ground height prediction
+* *TSNN_cov_models_CHM.py* contains the model implementation of the forest height prediction
+* *TSNN_cov_models_DTM.py* contains the model implementation of the ground height prediction
+* *TSNN_cov_result_CHM.py* is the main script for testing to predict the forest heights
+* *TSNN_cov_result_DTM.py* is the main script for testing to predict the ground heights
 
 # Prerequisites
-This code is written on the Ubuntu system for Python 3.7 and uses the Pytorch library.
+This code is written on the Ubuntu system for Python 3.9 and uses the Pytorch library.
 
-For correct usage of the code, please install the Python environment with the following step:
+For correct usage of the code, please install the Python environment with the following steps:
 
 **Installing Anaconda** (if not already installed)
 
@@ -91,7 +96,11 @@ Once the environment has been set up, activate it by command line as well:
 
 > spyder
 
-3. goes to the folder containing **testing.py**, edit, and run
+3. goes to the folder containing **TSNN_cov_result_CHM.py** or **TSNN_cov_result_DTM.py**, edit, and run
 
+**Showing results**
 
+1. If you want to visualize the results in Matlab, please run **showresult.m**
+
+2. The test results shown above are obtained in Matlab R2023a
 
