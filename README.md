@@ -25,7 +25,8 @@ The cost function is the multiclass cross-entropy function (CE).
 
 
 The test results are shown below:
-Forest:
+
+**Forest**:
 <p align="center">
 <img src="result/Forest.png" width="500"> 
 </p>
@@ -33,7 +34,8 @@ Forest:
 <p align="center">
 <img src="result/Forest_line_1.png" width="250"> <img src="result/Forest_line_170.png" width="250">  <img src="result/Forest_line_280.png" width="250">
 </p>
-Ground:
+
+**Ground**:
 <p align="center">
 <img src="result/Ground.png" width="500"> 
 </p>
@@ -78,7 +80,7 @@ terms of the license, as specified in the document LICENSE.txt
 * *TSNN_cov_result_DTM.py* is the main script for testing to predict the ground heights
 
 # Prerequisites
-This code is written on the Ubuntu system for Python 3.9 and uses the Pytorch library.
+This code is written on the Ubuntu system for Python 3.7 and uses the Pytorch library.
 
 For correct usage of the code, please install the Python environment with the following steps:
 
