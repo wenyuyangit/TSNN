@@ -24,10 +24,10 @@ The cost function is the multiclass cross-entropy function (CE).
 </p>
 
 
-An example on simulated data is shown below
-Noisy Image| Noise-Free Reference | InSAR-MONet 
-:-----------------------------------------|:---------------------------------------:|:--------------------------------------:
-<img src="https://user-images.githubusercontent.com/36993034/197556940-3af2a154-d82d-4df3-b18d-bd37b0258bd7.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557009-a407aea1-8f7c-41a5-834c-87066edace1e.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557074-e7566a82-f0bf-4853-9776-8ef22aa77c82.png" width="150">
+The test results are shown below:
+|Noisy Image| Noise-Free Reference | InSAR-MONet 
+forest|:-----------------------------------------|:---------------------------------------:|:--------------------------------------:
+|<img src="https://user-images.githubusercontent.com/36993034/197556940-3af2a154-d82d-4df3-b18d-bd37b0258bd7.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557009-a407aea1-8f7c-41a5-834c-87066edace1e.png" width="150"> |<img src="https://user-images.githubusercontent.com/36993034/197557074-e7566a82-f0bf-4853-9776-8ef22aa77c82.png" width="150">
 
 # Team members
  Wenyu Yang (wenyu.yang001@studenti.uniparthenope.it); \
@@ -100,7 +100,7 @@ Once the environment has been set up, activate it by command line as well:
 
 **Showing results**
 
-1. If you want to visualize the results in Matlab, please run **showresult.m**
+1. If you want to visualize the results in Matlab, please run **showresult.m** in **result** folder 
 
-2. The test results shown above are obtained in Matlab R2023a
+2. The test results in **result** folder are obtained in Matlab R2023a
 
