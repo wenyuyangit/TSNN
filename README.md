@@ -30,15 +30,17 @@ Forest:
 <img src="result/Forest.png" width="500"> 
 </p>
 
+<p align="center">
 <img src="result/Forest_line_1.png" width="250"> <img src="result/Forest_line_170.png" width="250">  <img src="result/Forest_line_280.png" width="250">
-
+</p>
 Ground:
 <p align="center">
 <img src="result/Ground.png" width="500"> 
 </p>
 
+<p align="center">
 <img src="result/Ground_line_100.png" width="250"> <img src="result/Ground_line_150.png" width="250">  <img src="result/Ground_line_280.png" width="250">
-
+</p>
  
 
 # Team members
