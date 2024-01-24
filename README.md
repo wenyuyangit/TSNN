@@ -54,8 +54,8 @@ The test results are shown below:
  Gilda  Schirinzi (gilda.schirinzi@uniparthenope.it)
 
  
-# License (how to get it ? for Sergio)
-Copyright (c) 2022 Dipartimento di Ingegneria and Dipartimento di Scienze e Tecnologie of Università degli Studi di Napoli "Parthenope".
+# License
+Copyright (c) 2024 Dipartimento di Ingegneria and Dipartimento di Scienze e Tecnologie of Università degli Studi di Napoli "Parthenope".
 
 All rights reserved. This work should only be used for nonprofit purposes.
 
