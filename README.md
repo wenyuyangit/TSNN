@@ -120,3 +120,6 @@ Once the environment has been set up, activate it by command line as well:
 
 2. The test results in **result** folder are obtained in Matlab R2023a
 
+**TropiSAR Data**
+
+The data for training and testing is gotten by TropiSAR 2009, more details please refer to [TropiSAR](https://earth.esa.int/eogateway/campaigns/tropisar).
