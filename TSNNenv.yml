@@ -1,4 +1,4 @@
-name: ywy_env
+name: TSNN_env
 channels:
   - intel
   - conda-forge
